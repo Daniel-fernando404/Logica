@@ -14,3 +14,12 @@ Cuando el contador llegue a 5, debe imprimir una advertencia especial: "T-minus 
 
 Al llegar a 0, el sistema debe imprimir el mensaje de despegue final: "¡Despegue exitoso!".
 */
+
+for (let lanzamiento = 10 ; lanzamiento >= 0 ; lanzamiento = lanzamiento - 1){
+  if (lanzamiento === 5) {
+    console.log("T-minus 5 segundos: Motores principales encendidos");
+  } else {
+    console.log("T-minus " + lanzamiento + " segundos");
+  }
+}
+console.log("¡Despegue exitoso!");
